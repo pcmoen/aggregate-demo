@@ -22,7 +22,6 @@ class VognService(private val vognRepository: VognRepository) {
 
         storedVogn.update(vogn)
 
-
-        return vognRepository.save(storedVogn)
+        return storedVogn
     }
 }
