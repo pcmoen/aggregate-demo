@@ -5,6 +5,7 @@ import javax.persistence.*
 import javax.persistence.CascadeType.ALL
 
 @Entity
+@Suppress("JpaObjectClassSignatureInspection")
 data class Vogn(
         @Column(nullable = false)
         var navn: String,
@@ -14,7 +15,8 @@ data class Vogn(
 ) {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long = 0L
+    @Suppress("unused")
+    val id: Long? = null
 
     fun update(vogn: Vogn) {
         this.navn = vogn.navn

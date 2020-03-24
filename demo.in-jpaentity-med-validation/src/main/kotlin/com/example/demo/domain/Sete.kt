@@ -2,6 +2,7 @@ package com.example.demo.domain
 
 import javax.persistence.*
 
+@Suppress("JpaObjectClassSignatureInspection")
 @Entity
 data class Sete(
         @Column(nullable = false)
@@ -10,7 +11,8 @@ data class Sete(
 ) {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long = 0L
+    @Suppress("unused")
+    val id: Long? = null
 
     fun update(sete: Sete) {
         this.navn = sete.navn
