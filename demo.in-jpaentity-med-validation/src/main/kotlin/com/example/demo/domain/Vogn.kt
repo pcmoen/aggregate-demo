@@ -11,6 +11,7 @@ data class Vogn(
         var navn: String,
 
         @OneToMany(cascade = [ALL])
+        @JoinColumn(name = "vogn_id")
         var kupeer: List<Kupe>
 ) {
     @Id

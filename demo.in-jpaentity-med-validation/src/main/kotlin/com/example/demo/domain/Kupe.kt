@@ -13,6 +13,7 @@ data class Kupe(
         var navn: String,
 
         @OneToMany(cascade = [CascadeType.ALL])
+        @JoinColumn
         var seter: List<Sete>) {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
