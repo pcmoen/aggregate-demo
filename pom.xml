@@ -10,10 +10,10 @@
 	<description>Demo project for Spring Boot</description>
 
 	<modules>
-		<module>demo.in-jpaentity</module>
-		<module>demo.in-jpaentity-med-validation</module>
-		<module>demo.in-service</module>
-		<module>demo.naive</module>
+		<module>in-jpaentity</module>
+		<module>in-jpaentity-with-validation</module>
+		<module>in-service</module>
+		<module>naive</module>
 	</modules>
 
 </project>
